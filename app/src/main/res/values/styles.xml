@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <!-- <item name="colorControlActivated">@color/colorAccent</item>
+
+         <item name="colorControlHighlight">@color/colorAccent</item>-->
+        <!--Disable White Screen-->
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="fullScreenWindow" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--TOolbar Transperant-->
+    <style name="HomeActionBar" parent="@style/AppTheme">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+        <item name="toolbarNavigationButtonStyle">@style/Toolbar.Button.Navigation.Tinted</item>
+        <item name="actionMenuTextColor">@color/colorAccent</item>
+        <item name="android:actionMenuTextColor">@color/colorAccent</item>
+    </style>
+
+    <style name="Toolbar.Button.Navigation.Tinted" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="tint">@color/colorAccent</item>
+    </style>
+
+
+</resources>

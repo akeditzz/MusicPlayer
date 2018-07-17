@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="label_music_player">Music Player</string>
+    <string name="label_music">Music</string>
+    <string name="intentkey_song">SONG</string>
+    <string name="temp_elapsed_time">00:00</string>
+    <string name="temp_song_duration">03:56</string>
+    <string name="song_paniyon_sa">Paniyon Sa</string>
+    <string name="artist_tanishk">Tanishk Bagchi,Rochak Kohli</string>
+    <string name="song_tera">Tera Ghata</string>
+    <string name="song_high">High Rated Gabru</string>
+    <string name="song_zingaat">Zingaat</string>
+    <string name="song_bom_diggy">Bom Diggy Diggy</string>
+    <string name="song_tareefan">Tareefan</string>
+    <string name="song_saathi">O Saathi</string>
+    <string name="song_pehli">Pehli Baar</string>
+    <string name="song_buzz">Buzz</string>
+    <string name="song_dil_diyan">Dil Diyan Gallan</string>
+    <string name="song_sanu_ek">Sanu Ek Pal Chain</string>
+    <string name="artist_guru">Guru Randhawa</string>
+    <string name="artist_ajay">Ajay-Atul</string>
+    <string name="artist_zack">Zack Knight,Jasmin Walia</string>
+    <string name="artist_badshah">Badshah</string>
+    <string name="artist_atif">Atif Aslam</string>
+    <string name="artist_ajay_gogavale">Ajay Gogavale</string>
+    <string name="artist_aastha">Aastha Gill,Badshah</string>
+    <string name="artist_rahat">Rahat Fateh Ali Khan</string>
+    <string name="action_search">Search</string>
+    <string name="hint_search_here">Search Here</string>
+</resources>
