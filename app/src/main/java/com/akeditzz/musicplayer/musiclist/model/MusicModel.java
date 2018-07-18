@@ -6,14 +6,14 @@ public class MusicModel implements Serializable {
 
     private String songName;
     private String artistName;
-    private int thumbNail;
+    private int thumbnail;
     private String elapsedTime;
     private String endTime;
 
-    public MusicModel(String songName, String artistName, int thumbNail, String elapsedTime, String endTime) {
+    public MusicModel(String songName, String artistName, int thumbnail, String elapsedTime, String endTime) {
         this.songName = songName;
         this.artistName = artistName;
-        this.thumbNail = thumbNail;
+        this.thumbnail = thumbnail;
         this.elapsedTime = elapsedTime;
         this.endTime = endTime;
     }
@@ -34,12 +34,12 @@ public class MusicModel implements Serializable {
         this.artistName = artistName;
     }
 
-    public int getThumbNail() {
-        return thumbNail;
+    public int getThumbnail() {
+        return thumbnail;
     }
 
-    public void setThumbNail(int thumbNail) {
-        this.thumbNail = thumbNail;
+    public void setThumbnail(int thumbnail) {
+        this.thumbnail = thumbnail;
     }
 
     public String getElapsedTime() {

@@ -1,11 +1,9 @@
 package com.akeditzz.musicplayer.splashpage;
 
 import android.content.Intent;
-import android.graphics.Typeface;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.widget.TextView;
 
 import com.akeditzz.musicplayer.R;
 import com.akeditzz.musicplayer.mainpage.MainActivity;

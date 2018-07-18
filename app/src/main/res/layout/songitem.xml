@@ -2,14 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@android:color/transparent">
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
 
     <ImageView
         android:id="@+id/iv_thumb"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/ic_play_empty"
-        android:layout_margin="@dimen/dimen_8dp" />
+        android:layout_margin="@dimen/dimen_8dp"
+        android:src="@drawable/ic_play_empty" />
 
     <RelativeLayout
         android:layout_width="match_parent"

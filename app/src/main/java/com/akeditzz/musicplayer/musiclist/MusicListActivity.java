@@ -17,6 +17,9 @@ import com.akeditzz.musicplayer.musiclist.model.MusicModel;
 
 import java.util.ArrayList;
 
+/**
+ * @author Akshay
+ */
 public class MusicListActivity extends AppCompatActivity implements ISongList {
 
     //Declaration
@@ -38,7 +41,6 @@ public class MusicListActivity extends AppCompatActivity implements ISongList {
     }
 
     /**
-     * @author Akshay
      * view initialization
      */
     private void initView() {
@@ -48,7 +50,6 @@ public class MusicListActivity extends AppCompatActivity implements ISongList {
     }
 
     /**
-     * @author Akshay
      * method to set songs data in list
      * in future we can fetch data either froms server or form local storage
      */
@@ -69,7 +70,6 @@ public class MusicListActivity extends AppCompatActivity implements ISongList {
     }
 
     /**
-     * @author Akshay
      * setting songs list adapter
      */
     private void setSongsAdapter() {
@@ -118,10 +118,5 @@ public class MusicListActivity extends AppCompatActivity implements ISongList {
         intent.putExtra(getString(R.string.intentkey_song), musicModel);
         setResult(RESULT_OK, intent);
         finish();
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
     }
 }

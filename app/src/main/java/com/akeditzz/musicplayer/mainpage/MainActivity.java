@@ -15,15 +15,18 @@ import com.akeditzz.musicplayer.R;
 import com.akeditzz.musicplayer.musiclist.MusicListActivity;
 import com.akeditzz.musicplayer.musiclist.model.MusicModel;
 
+/**
+ * @author Akshay
+ */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     //Declaration
+    private static int MUSIC_REQUEST_CODE = 999;
     private static boolean isShuffle;
     private static boolean isLoop;
+    private static MusicModel musicModel;
     private ImageView ivShuffle;
     private ImageView ivLoop;
-    private int MUSIC_REQUEST_CODE = 999;
-    private static MusicModel musicModel;
     private TextView tvSongName;
     private TextView tvElapsedTime;
     private TextView tvEndTime;
@@ -43,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     * @author Akshay
      * Views initialization
      */
     private void initView() {
@@ -64,13 +66,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (musicModel == null) {
             startActivityForResult(new Intent(this, MusicListActivity.class), MUSIC_REQUEST_CODE);
-        }else {
+        } else {
             playMusic();
         }
     }
 
     /**
-     * @author Akshay
      * common method to check and update ui if shuffle or loop should be active
      */
     private boolean checkShuffleLoops(boolean b, ImageView imageView) {
@@ -123,11 +124,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-    }
-
-    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK && requestCode == MUSIC_REQUEST_CODE && data.getExtras() != null) {
@@ -137,7 +133,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     * @author Akshay
      * method to set ui for song selected and play music
      */
     private void playMusic() {
@@ -145,7 +140,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             tvSongName.setText(String.format("%s - %s", musicModel.getArtistName(), musicModel.getSongName()));
             tvElapsedTime.setText(musicModel.getElapsedTime());
             tvEndTime.setText(musicModel.getEndTime());
-            ivThumbNail.setImageResource(musicModel.getThumbNail());
+            ivThumbNail.setImageResource(musicModel.getThumbnail());
         }
     }
 }

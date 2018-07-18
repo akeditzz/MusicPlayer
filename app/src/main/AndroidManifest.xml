@@ -12,9 +12,11 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".mainpage.MainActivity"
+            android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
             android:name=".splashpage.SplashActivity"
+            android:label="@string/label_splashscreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +31,8 @@
 
         <activity
             android:name=".musiclist.MusicListActivity"
-            android:screenOrientation="portrait"/>
+            android:label="@string/label_songs"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

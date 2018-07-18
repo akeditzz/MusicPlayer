@@ -16,7 +16,6 @@ import com.akeditzz.musicplayer.musiclist.interfaces.ISongList;
 import com.akeditzz.musicplayer.musiclist.model.MusicModel;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class SongListAdapter extends RecyclerView.Adapter<SongListAdapter.ViewHolder> implements Filterable {
 
@@ -48,7 +47,7 @@ public class SongListAdapter extends RecyclerView.Adapter<SongListAdapter.ViewHo
         holder.tvSongName.setText(musicFilterList.get(position).getSongName());
         holder.tvArtistName.setText(musicFilterList.get(position).getArtistName());
         holder.tvSongDuration.setText(musicFilterList.get(position).getEndTime());
-        holder.ivThumb.setImageResource(musicFilterList.get(position).getThumbNail());
+        holder.ivThumb.setImageResource(musicFilterList.get(position).getThumbnail());
     }
 
     @Override
